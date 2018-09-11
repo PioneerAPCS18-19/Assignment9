@@ -113,11 +113,11 @@ public class Library
         {
             if(catalog.get(i).isBorrowed())
             {
-                System.out.println("\"" + catalog.get(i).getTitle() + "\" (not in stock)");
+                System.out.println("\"" + catalog.get(i) + "\" -- OUT OF STOCK");
             }
 
             else
-                System.out.println("\"" + catalog.get(i).getTitle() + "\"");
+                System.out.println("\"" + catalog.get(i) + "\"");
         }
     }
 
