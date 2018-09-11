@@ -83,7 +83,7 @@ public class Library
                 else
                 {
                     System.out.println("You successfully rented \"" + catalog.get(i).getTitle() + "\" from " + this);
-                    catalog.get(i).rented();
+                    catalog.get(i).rentBook();
                     return;
                 }
             }
@@ -135,7 +135,7 @@ public class Library
         {
             if(title.equalsIgnoreCase(catalog.get(i).getTitle()))
             {
-                catalog.get(i).returned();
+                catalog.get(i).returnBook();
                 System.out.println("You successfully returned \"" + catalog.get(i).getTitle() + "\" to " + this);
                 System.out.println("Your book was " + daysLate + " days late. You owe $"
                         + (daysLate * FINE));
