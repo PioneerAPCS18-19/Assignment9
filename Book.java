@@ -110,6 +110,6 @@ public class Book
     @Override
     public String toString()
     {
-        return getTitle() + " by " + getAuthor() + "(" + getYear() + ")";
+        return getTitle() + " by " + getAuthor() + " (" + getYear() + ")";
     }
 }
